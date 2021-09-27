@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+table {
+  border-collapse: collapse;
+  font-family: 'Lato', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+table, th, td {
+  border: 2px solid #f8f8f8;
+}
+
+th {
+  background-color: #578845;
+  color: #fff;
+  height: 2em;
+  width: auto;
+  padding: 0px 10px;
+}
+
+td:first-child {
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #54729a;
+  color: #fff;
+  height: 3em;
+}
+
+td:not(:first-child) {
+  background-color: rgb(217 218 220);
+  margin: auto;
+
+}
+
+.modal-button {
+  border-radius: 50%;
+  background-color: rgb(224 53 20);
+  border-style: none;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  display: block;
+}
+
+.abstract-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: 1px groove gray;
+  transform: translate(-50%, -50%);
+  background: rgb(150, 175, 221);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.abstract-text {
+  width: 90%;
+  height: 90%;
+  border-color: #fff;
+  box-sizing: border-box;
+  background-color: rgb(73, 73, 73);
+  margin: auto;
+  color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.close-modal-button{
+  text-align: end;
+  padding-right: 8px;
+  border-radius: 50%;
 }
